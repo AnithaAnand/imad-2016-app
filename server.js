@@ -16,7 +16,6 @@ var articles = {
             <p>
                     This also serves the complete package of the first article of the month. More practical modules will be discussed in coming weeks. Lets explore the horizon.
                 </p`},
-   
     'article-two' :{  title: 'Article Two - Anitha Subhashini',
     heading: 'Article Two',
     date: '20th Sep, 2016',
@@ -29,7 +28,6 @@ var articles = {
                     This also serves the complete package of the second article of the month. More practical modules will be discussed in coming weeks.
                 </p`
 },
-   
     'article-three': {  title: 'Article Three - Anitha Subhashini',
     heading: 'Article Three',
     date: '21st Sep, 2016',
