@@ -16,6 +16,7 @@ var articles = {
             <p>
                     This also serves the complete package of the first article of the month. More practical modules will be discussed in coming weeks. Lets explore the horizon.
                 </p`},
+   
     'article-two' :{  title: 'Article Two - Anitha Subhashini',
     heading: 'Article Two',
     date: '20th Sep, 2016',
@@ -28,6 +29,7 @@ var articles = {
                     This also serves the complete package of the second article of the month. More practical modules will be discussed in coming weeks.
                 </p`
 },
+   
     'article-three': {  title: 'Article Three - Anitha Subhashini',
     heading: 'Article Three',
     date: '21st Sep, 2016',
@@ -78,6 +80,7 @@ var htmlTemplate = `
 `;
 return htmlTemplate;
 }
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -88,6 +91,10 @@ app.get('/:articleName', function (req, res){
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
