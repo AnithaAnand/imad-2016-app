@@ -88,10 +88,7 @@ function createTemplate (data){
         <div>
         ${content}
         </div>
-        <div>
-        ${comment}
-        </div>
-</body>
+       </body>
 </html>
 `;
 return htmlTemplate;
