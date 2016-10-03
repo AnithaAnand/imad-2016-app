@@ -63,7 +63,7 @@ button.onclick = function (){
     request_home.onreadystatechange = function(){
       if (request_home.readyState ===XMLHttpRequest.DONE){
            if (request_home.status ===200){
-              var com =request.responseText;
+              var com =request_home.responseText;
               com = JSON.parse(com);
                var comms ='';
             for (var j=0; j<com.length; j++){
