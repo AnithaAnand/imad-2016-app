@@ -26,6 +26,7 @@ var articles = {
                 </p>
             <p>
                     This also serves the complete package of the second article of the month. More practical modules will be discussed in coming weeks.
+                    <div footer=
                 </p`
 },
     'article-three': {  title: 'Article Three - Anitha Subhashini',
