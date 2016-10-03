@@ -57,24 +57,26 @@ button.onclick = function (){
    };
    
    var comment =document.getElementById('comment_btn');
-  comment.onclick=function(){
-   var request_home= new HttpRequest();
+   comment.onclick=function(){
+   
+   var request_home= new XMLHttpRequest();
     request_home.onreadystatechange = function(){
       if (request_home.readyState ===XMLHttpRequest.DONE){
-           if (request_home.status ===300){
+           if (request_home.status ===200){
               var com =request.responseText;
               com = JSON.parse(com);
                var comms ='';
             for (var j=0; j<com.length; j++){
                     comms += '<li>' + comms[j] + '</li>';
         }
-                var ul = document.getElementById()
+                var ul = document.getElementById('commenlist');
+                ul.innerHTML = comms;
                 
             }
        }
     
     };
- };
  var commentInput = document.getElementById('comment');
- var comments = commentInput.value;//
+ var comments = commentInput.value;
+  };
   
