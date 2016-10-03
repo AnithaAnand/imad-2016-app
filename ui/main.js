@@ -59,7 +59,7 @@ button.onclick = function (){
    var comment =document.getElementById('comment_btn');
    comment.onclick=function(){
    
-   var request_home= new XMLHttpRequest();
+    var request_home= new XMLHttpRequest();
     request_home.onreadystatechange = function(){
       if (request_home.readyState ===XMLHttpRequest.DONE){
            if (request_home.status ===200){
@@ -69,7 +69,7 @@ button.onclick = function (){
             for (var j=0; j<com.length; j++){
                     comms += '<li>' + comms[j] + '</li>';
         }
-                var ul = document.getElementById('commenlist');
+                var ul = document.getElementById('commentlist');
                 ul.innerHTML = comms;
                 
             }
@@ -78,5 +78,7 @@ button.onclick = function (){
     };
  var commentInput = document.getElementById('comment');
  var comments = commentInput.value;
+ request.open('GET', 'http://anithaanand.imad.hasura-app.io/comment-list?comment=' + comment, true);
+  request.send(null);
   };
   
