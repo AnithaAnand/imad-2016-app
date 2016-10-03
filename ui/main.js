@@ -66,7 +66,7 @@ button.onclick = function (){
                 com = JSON.parse(com);
                 var comms ='';
                 for (var j=0; j<com.length; j++){
-                    comms += '<li>' + comms[j] + '<li>';
+                    comms += '<li>' + comms[j] + '</li>';
                 }
               //  var ul = document.getElementById()
                 
