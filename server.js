@@ -15,7 +15,13 @@ var articles = {
                 </p>
             <p>
                     This also serves the complete package of the first article of the month. More practical modules will be discussed in coming weeks. Lets explore the horizon.
-                </p`},
+                </p>
+        <div>Comments<br/>
+                 <input type ="text" id ="comment1"></input> 
+                 <input type ="submit" id = "comment_btn1" value="Submit"></input> 
+         </div>
+            <hr/>`
+    },
     'article-two' :{  title: 'Article Two - Anitha Subhashini',
     heading: 'Article Two',
     date: '20th Sep, 2016',
@@ -26,8 +32,13 @@ var articles = {
                 </p>
             <p>
                     This also serves the complete package of the second article of the month. More practical modules will be discussed in coming weeks.
-                    <div footer=
-                </p`
+                </p>
+        <div>Comments<br/>
+           <input type ="text" id ="comment2"></input> 
+           <input type ="submit" id = "comment_btn2" value="Submit"></input> 
+        </div>
+        <hr/>`
+                
 },
     'article-three': {  title: 'Article Three - Anitha Subhashini',
     heading: 'Article Three',
@@ -39,7 +50,12 @@ var articles = {
                 </p>
             <p>
                     This also serves the complete package of the 3rd article of the month.
-                </p`
+                </p>
+            <div>Comments<br/>
+                <input type ="text" id ="comment3"></input> 
+                <input type ="submit" id = "comment_btn3" value="Submit"></input> 
+            </div>
+            <hr/>`
 },
 };
   
@@ -49,8 +65,7 @@ function createTemplate (data){
    var date = data.date;
    var heading = data.heading;
    var content = data.content;
-
-var htmlTemplate = `
+   var htmlTemplate = `
 <html>
 <head>
     <title>
@@ -73,6 +88,8 @@ var htmlTemplate = `
         <div>
         ${content}
         </div>
+        <div>
+        ${comment}
         </div>
 </body>
 </html>
