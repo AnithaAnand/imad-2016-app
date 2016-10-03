@@ -54,7 +54,27 @@ button.onclick = function (){
   var name = nameInput.value;
   request.open('GET', 'http://anithaanand.imad.hasura-app.io/submit-name?name=' + name, true);
   request.send(null);
-  
- 
- };
+   };
+   
+   var comment =document.getElementById('comment_btn');
+  comment.onclick=function(){
+    var request_home= new HttpRequest();
+    request_home.onreadystatechange = function(){
+        if (request_home.readyState ===XMLHttpRequest.DONE){
+            if (request_home.status ===300){
+                var com =request.responseText;
+                com = JSON.parse(com);
+                var comms ='';
+                for (var j=0; j<com.length; j++){
+                    comms += '<li>' + comms[j] + '<li>';
+                }
+              //  var ul = document.getElementById()
+                
+            }
+        }
+    
+    };
+  };
+  var commentInput = document.getElementById('comment');
+  var comments = commentInput.value;
   
