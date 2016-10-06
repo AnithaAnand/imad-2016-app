@@ -69,8 +69,8 @@ button.onclick = function (){
             for (var j=0; j<comms.length; j++){
                     comm_list += '<li>' + comms[j] + '</li>';
         }
-                var ul = document.getElementById('commentlist');
-                ul.innerHTML = comm_list;
+                var ol = document.getElementById('commentlist');
+                ol.innerHTML = comm_list;
                 
             }
        }
