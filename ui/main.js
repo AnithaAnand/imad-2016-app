@@ -78,7 +78,7 @@ button.onclick = function (){
     };
  var commentInput = document.getElementById('comment');
  var comment = commentInput.value;
- request.send('GET', 'http://anithaanand.imad.hasura-app.io/comment-list?comment=' + comment, true);
+ request.open('GET', 'http://anithaanand.imad.hasura-app.io/comment-list?comment=' + comment, true);
   request.send(null);
   };
   
