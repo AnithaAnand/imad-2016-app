@@ -111,12 +111,12 @@ app.get('/submit-name', function(req, res){
    res.send(JSON.stringify(names));
 });
 
-var comments =[];
+var comments_list =[];
 app.get('/comment-list', function(req, res){
    //Get the name from the request
-   var comment_home = req.query.commen_home;
-   comments.push(comment_home);
-   res.send(JSON.stringify(comments));
+   var comment_home = req.query.comment_home;
+   comments_list.push(comment_home);
+   res.send(JSON.stringify(comments_list));
 });
 
 
