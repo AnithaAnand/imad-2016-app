@@ -63,14 +63,14 @@ button.onclick = function (){
     request_home.onreadystatechange = function(){
       if (request_home.readyState ===XMLHttpRequest.DONE){
            if (request_home.status ===200){
-              var com =request_home.responseText;
-              com = JSON.parse(com);
-               var comms ='';
+              var comms =request_home.responseText;
+              comms = JSON.parse(comms);
+               var comm_list ='';
             for (var j=0; j<com.length; j++){
-                    comms += '<li>' + comms[j] + '</li>';
+                    comm_list += '<li>' + comms[j] + '</li>';
         }
                 var ul = document.getElementById('commentlist');
-                ul.innerHTML = comms;
+                ul.innerHTML = comm_list;
                 
             }
        }
