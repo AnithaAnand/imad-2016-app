@@ -56,8 +56,8 @@ button.onclick = function (){
   request.send(null);
    };
    
-   var comment =document.getElementById('comment_btn');
-   comment.onclick=function(){
+   var comments =document.getElementById('comment_btn');
+   comments.onclick=function(){
    
     var request_home= new XMLHttpRequest();
     request_home.onreadystatechange = function(){
@@ -66,7 +66,7 @@ button.onclick = function (){
               var comms =request_home.responseText;
               comms = JSON.parse(comms);
                var comm_list ='';
-            for (var j=0; j<com.length; j++){
+            for (var j=0; j<comms.length; j++){
                     comm_list += '<li>' + comms[j] + '</li>';
         }
                 var ul = document.getElementById('commentlist');
@@ -77,8 +77,8 @@ button.onclick = function (){
     
     };
  var commentInput = document.getElementById('comment');
- var comments = commentInput.value;
- request.open('GET', 'http://anithaanand.imad.hasura-app.io/comment-list?comments=' + comments, true);
+ var comment = commentInput.value;
+ request.open('GET', 'http://anithaanand.imad.hasura-app.io/comment-list?comment=' + comment, true);
   request.send(null);
   };
   
