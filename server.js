@@ -12,61 +12,7 @@ var config = {
 };
 var app = express();
 app.use(morgan('combined'));
-var articles = {
-    'article-one' :{     title: 'Article One - Anitha Subhashini',
-    heading: 'Article One',
-    date: '19th Sep, 2016',
-    content: `
-            <p>
-                    This is my first article content page. It serves the first article for the month. Starts from September 19th 2016.
-                    Continues for two more week. All topics related to the article are specified here.
-                </p>
-            <p>
-                    This also serves the complete package of the first article of the month. More practical modules will be discussed in coming weeks. Lets explore the horizon.
-                </p>
-        <div>Comments<br/>
-                 <input type ="text" id ="comment1"></input> 
-                 <input type ="submit" id = "comment_btn1" value="Submit"></input> 
-         </div>
-            <hr/>`
-    },
-    'article-two' :{  title: 'Article Two - Anitha Subhashini',
-    heading: 'Article Two',
-    date: '20th Sep, 2016',
-    content: `
-            <p>
-                    This is my second article content page. It serves the second article for the month. Starts from September 20th 2016.
-                 All topics related to the article are specified here.
-                </p>
-            <p>
-                    This also serves the complete package of the second article of the month. More practical modules will be discussed in coming weeks.
-                </p>
-        <div>Comments<br/>
-           <input type ="text" id ="comment2"></input> 
-           <input type ="submit" id = "comment_btn2" value="Submit"></input> 
-        </div>
-        <hr/>`
-                
-},
-    'article-three': {  title: 'Article Three - Anitha Subhashini',
-    heading: 'Article Three',
-    date: '21st Sep, 2016',
-    content: `
-            <p>
-                    This is my third article content page. It serves the third article for the month. Starts from September 21st 2016.
-                    Continues for two more week. All topics related to the article are specified here.
-                </p>
-            <p>
-                    This also serves the complete package of the 3rd article of the month.
-                </p>
-            <div>Comments<br/>
-                <input type ="text" id ="comment3"></input> 
-                <input type ="submit" id = "comment_btn3" value="Submit"></input> 
-            </div>
-            <hr/>`
-},
-};
-  
+
 function createTemplate (data){
    var title = data.title;
    var date = data.date;
