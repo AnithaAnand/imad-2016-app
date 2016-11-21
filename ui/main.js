@@ -13,10 +13,10 @@
         // var counter = request.responseText;
          //var span = document.getElementById('count');
         // span.innerHTML = counter.toString();
-     }
+   //  }
      //not done yet
-  }
-  };
+//  }
+//  };
   //make the request
   //request.open('GET', 'http://anithaanand.imad.hasura-app.io/counter', true);
   //request.send(null);
@@ -44,8 +44,7 @@
             alert("Something went wrong on server");
         }
         }
-     }
-  }
+  
   };
   
   //make the request
