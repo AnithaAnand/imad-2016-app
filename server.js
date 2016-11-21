@@ -121,26 +121,26 @@ app.get('/test-db', function (req, res){
     });
 });
 
-var counter = 0;
-app.get('/counter',function (req,res){
-    counter = counter + 1;
-    res.send(counter.toString());
-});
-var names =[];
-app.get('/submit-name', function(req, res){
+//var counter = 0;
+//app.get('/counter',function (req,res){
+  //  counter = counter + 1;
+    //res.send(counter.toString());
+//});
+//var names =[];
+//app.get('/submit-name', function(req, res){
    //Get the name from the request
    var name = req.query.name;
    names.push(name);
    res.send(JSON.stringify(names));
 });
 
-var comms =[];
-app.get('/comment-list', function(req, res){
+//var comms =[];
+//app.get('/comment-list', function(req, res){
    //Get the name from the request
-   var comment = req.query.comment;
-   comms.push(comment);
-   res.send(JSON.stringify(comms));
-});
+  // var comment = req.query.comment;
+  // comms.push(comment);
+//   res.send(JSON.stringify(comms));
+//});
 
 
 app.get('/articles/:articleName', function (req, res){
