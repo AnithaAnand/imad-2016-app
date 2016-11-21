@@ -39,7 +39,7 @@ function createTemplate (data){
                 ${heading}
             </h3>
             <div>
-              ${date.toDateSting()}
+              ${date.toDateString()}
             </div>
         <div>
         ${content}
