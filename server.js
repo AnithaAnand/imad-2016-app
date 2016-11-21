@@ -75,7 +75,7 @@ app.post('/create-user', function (req, res) {
  if (err) {
             res.status(500).send(err.toString());
         } else {
-            res.send("user Successfully create : " + username);
+            res.send("user Successfully created : " + username);
         }
     
         
